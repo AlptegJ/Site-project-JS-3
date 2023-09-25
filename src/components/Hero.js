@@ -13,33 +13,33 @@ export function HeroComponent() {
         <div className="h-full flex flex-col justify-center items-center ">
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
-              <p className="opacity-25">Branding</p>
-              <p className="hover:text-red-500">
+              <h2 className="opacity-25">Branding</h2>
+              <h2 className="hover:text-red-500">
                 <Link to="/branding">Branding</Link>
-              </p>
-              <p className="opacity-25">Branding</p>
+              </h2>
+              <h2 className="opacity-25">Branding</h2>
             </span>
           </div>
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
-              <p className="opacity-25  ">webwebweb</p>
-              <p className="opacity-100 hover:text-red-500">
+              <h2 className="opacity-25  ">webwebweb</h2>
+              <h2 className="opacity-100 hover:text-red-500">
                 <Link to="/web">Web</Link>
-              </p>
-              <p className="opacity-25 ">webwebweb</p>
+              </h2>
+              <h2 className="opacity-25 ">webwebweb</h2>
             </span>
           </div>
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
-              <p className="opacity-25">strategy</p>
-              <p className="opacity-100 hover:text-red-500">
+              <h2 className="opacity-25">strategy</h2>
+              <h2 className="opacity-100 hover:text-red-500">
                 <Link to="/strategy">Strategy</Link>
-              </p>
-              <p className="opacity-25">strategy</p>
+              </h2>
+              <h2 className="opacity-25">strategy</h2>
             </span>
           </div>
-          <p className="text-sm">
-            want to stad out from the crowd? <br />
+          <p className="text-m mt-5">
+            Want to stad out from the crowd? <br />
             Let us bring your project to the next lvl!
           </p>
         </div>

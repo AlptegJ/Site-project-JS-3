@@ -3,8 +3,6 @@ import { AboutComponent } from "../components/About";
 import { ProjectsComponent } from "../components/Projects";
 import { ExpertiseComponent } from "../components/Expertise";
 import { CareerComponent } from "../components/Career";
-import { HeaderComponent } from "../components/Header";
-import { SocMedComponent } from "../components/Socmed";
 import { FooterComponent } from "../components/Footer";
 import { HeroComponent } from "../components/Hero";
 
@@ -12,28 +10,30 @@ export function HeroView() {
   return (
     <div>
       <div>
-        <section>
+        <section className="h-screen">
           <HeroComponent />
         </section>
 
-        <section>
+        <section className="h-screen">
           <AboutComponent />
         </section>
-        <section>
+        <section className="h-screen">
           <ProjectsComponent />
         </section>
-        <section>
+        <section className="h-screen">
           <ExpertiseComponent />
         </section>
-        <section>
-          <CareerComponent />
-          <button>
-            <Link to="/join-us">Job</Link>
-          </button>
+        <section className="h-screen grid grid-rows-2">
+          <div className="row-span-1">
+            <CareerComponent />
+            <button>
+              <Link to="/join-us">Job</Link>
+            </button>
+          </div>
+          <div className="row-span-1 flex flex-col justify-between">
+            <FooterComponent />
+          </div>
         </section>
-        <footer>
-          <FooterComponent />
-        </footer>
       </div>
     </div>
   );

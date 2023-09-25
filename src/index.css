@@ -1,12 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Martian+Mono:wght@800&family=Pacifico&display=swap");
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+p {
+  font-family: "Martian Mono", monospace;
+}
+
+h4 {
+  font-family: "Pacifico", cursive;
 }
 
 .app {

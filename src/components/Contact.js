@@ -82,6 +82,7 @@ export function ContactComponent() {
             </div>
             <div className="pt-10 text-white text-xl">
               <h3>Come and see us!</h3>
+              <p>Techst. 42, 17th Floor</p>
               <p>1337, silicon valley</p>
             </div>
           </section>
