@@ -7,14 +7,13 @@ export function HeaderComponent() {
         <Link to="/">LOGO</Link>
       </div>
       <div className="flex gap-5 mr-5 p-1">
-        <Link to="About">About</Link>
-        <Link to="Career">Career</Link>
-        <Link to="Projects">Projects</Link>
-        <Link to="Expertise">Expertise</Link>
+        <Link to="/About">About</Link>
+        <Link to="/join-us">Career</Link>
+        <Link to="/Projects">Projects</Link>
         <button className=" text-xs px-3 bg-red-500 rounded-full text-white hover:bg-orange-200">
           <Link to="/contact">Let's Talk</Link>
         </button>
-        <div className="">burger</div>
+        <Link to="/Expertise">Expertise</Link>
       </div>
     </header>
   );

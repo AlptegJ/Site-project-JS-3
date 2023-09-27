@@ -1,23 +1,32 @@
 import { Link } from "react-router-dom";
 import { FooterComponent } from "../components/Footer";
 import { OtherAreasComponent } from "../components/OtherAreas";
-import { JoinUsComponent } from "../components/JoinUs";
+import { ProjectsComponent } from "../components/Projects";
 
-export function JoinUsView() {
+export function ProjectsView() {
+  const btnId11 = "#Projects1";
+  const btnId12 = "#Projects2";
+  const btnId13 = "#Projects3";
+  const btnId14 = "#Projects4";
   return (
     <div>
       <div>
         <section className="h-screen">
-          <JoinUsComponent />
+          <ProjectsComponent
+            btnId11={btnId11}
+            btnId12={btnId12}
+            btnId13={btnId13}
+            btnId14={btnId14}
+          />
         </section>
-        <section id="joinUs1" className="h-screen">
-          JoinUs
+        <section id="projects1" className="h-screen">
+          Projects-branding
         </section>
-        <section id="joinUs2" className="h-screen">
-          JoinUs
+        <section id="projects2" className="h-screen">
+          Projects-web
         </section>
-        <section id="joinUs3" className="h-screen">
-          JoinUs
+        <section id="projects3" className="h-screen">
+          Projects-Strategy
         </section>
         <section className="h-screen">
           <OtherAreasComponent />

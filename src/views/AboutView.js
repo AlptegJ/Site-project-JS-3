@@ -1,23 +1,23 @@
 import { Link } from "react-router-dom";
 import { FooterComponent } from "../components/Footer";
 import { OtherAreasComponent } from "../components/OtherAreas";
-import { JoinUsComponent } from "../components/JoinUs";
+import { AboutComponent } from "../components/About";
 
-export function JoinUsView() {
+export function AboutView() {
   return (
     <div>
       <div>
-        <section className="h-screen">
-          <JoinUsComponent />
+        <section>
+          <AboutComponent />
         </section>
-        <section id="joinUs1" className="h-screen">
-          JoinUs
+        <section id="about1" className="h-screen">
+          About
         </section>
-        <section id="joinUs2" className="h-screen">
-          JoinUs
+        <section id="about2" className="h-screen">
+          About
         </section>
-        <section id="joinUs3" className="h-screen">
-          JoinUs
+        <section id="about3" className="h-screen">
+          About
         </section>
         <section className="h-screen">
           <OtherAreasComponent />

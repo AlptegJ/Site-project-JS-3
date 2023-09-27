@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { CareerComponent } from "../components/Career";
 import { FooterComponent } from "../components/Footer";
 import { StrategyComponent } from "../components/Strategy";
 import { OtherAreasComponent } from "../components/OtherAreas";
 
-export function StrategyView() {
+export function StrategyView({ current, setCurrent }) {
   const btnId7 = "#strategy1";
   const btnId8 = "#strategy2";
   const btnId9 = "#strategy3";
   const btnId10 = "#strategy4";
+  setCurrent("strategy");
 
   return (
     <div>
@@ -34,11 +34,11 @@ export function StrategyView() {
           Strategy 4
         </section>
         <section className="h-screen">
-          <OtherAreasComponent />
+          <OtherAreasComponent current={current} setCurrent={setCurrent} />
         </section>
         <section className="h-screen grid grid-rows-2">
           <div className="row-span-1">
-            <CareerComponent />
+            come join
             <button>
               <Link to="/join-us">Job</Link>
             </button>

@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
-import { CareerComponent } from "../components/Career";
 import { FooterComponent } from "../components/Footer";
 import { OtherAreasComponent } from "../components/OtherAreas";
 import { WebComponent } from "../components/Web";
 
-export function WebView() {
+export function WebView({ current, setCurrent }) {
   const btnId4 = "#web1";
   const btnId5 = "#web2";
   const btnId6 = "#web3";
+  setCurrent("web");
 
   return (
     <div>
@@ -25,11 +25,11 @@ export function WebView() {
           Web ancor 3
         </section>
         <section className="h-screen">
-          <OtherAreasComponent />
+          <OtherAreasComponent current={current} setCurrent={setCurrent} />
         </section>
         <section className="h-screen grid grid-rows-2">
           <div className="row-span-1">
-            <CareerComponent />
+            come join
             <button>
               <Link to="/join-us">Job</Link>
             </button>
