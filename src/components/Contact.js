@@ -74,11 +74,11 @@ export function ContactComponent() {
           <section className="flex flex-col gap-2">
             <div className="pt-10 text-white text-xl">
               <h3>Give us a call!</h3>
-              <p>080-666-666</p>
+              <p>555-656-656</p>
             </div>
             <div className="pt-5 text-white text-xl">
               <h3>Write to us!</h3>
-              <p>info@company.com</p>
+              <p>info@TechWeavers.com</p>
             </div>
             <div className="pt-10 text-white text-xl">
               <h3>Come and see us!</h3>

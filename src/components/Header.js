@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import logo from "../logo-tw.png";
 
 export function HeaderComponent() {
   return (
-    <header className="flex justify-between py-2 text-m">
+    <header className="flex justify-between items-center py-2 text-m">
       <div className="ml-5 p-1">
-        <Link to="/">LOGO</Link>
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-12"></img>
+        </Link>
       </div>
       <div className="flex gap-5 mr-5 p-1">
         <Link to="/About">About</Link>

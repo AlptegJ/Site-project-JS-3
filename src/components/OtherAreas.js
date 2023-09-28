@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 export function OtherAreasComponent({ current, setCurrent }) {
   const navigate = useNavigate();
-  console.log(current);
 
   if (current === "branding") {
     return (

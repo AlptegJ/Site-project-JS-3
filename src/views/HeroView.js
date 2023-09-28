@@ -13,6 +13,14 @@ export function HeroView() {
         </section>
 
         <section className="h-screen">
+          <p>
+            By specializing in these key subjects within branding, strategy, and
+            website building, TechWeavers can offer comprehensive services to
+            clients looking to establish a strong online presence and
+            effectively communicate their brand message.
+          </p>
+        </section>
+        <section className="h-screen">
           about
           <button>
             <Link to="/about">read more</Link>
@@ -24,7 +32,6 @@ export function HeroView() {
             <Link to="/projects">read more</Link>
           </button>
         </section>
-        <section className="h-screen">Stuff</section>
         <section className="h-screen grid grid-rows-2">
           <div className="row-span-1">
             come join us
