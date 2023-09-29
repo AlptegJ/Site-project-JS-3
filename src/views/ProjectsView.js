@@ -1,12 +1,18 @@
 import { FooterComponent } from "../components/Footer";
 import { ProjectsComponent } from "../components/Projects";
 import { TalentComponent } from "../components/Talent";
+import { ProjectData } from "../constants/ProjectsData";
 
-export function ProjectsView({ navigate }) {
+export function ProjectsView({
+  navigate,
+  projectsDisplay,
+  setProjectsDisplay,
+}) {
   const btnId11 = "#Projects1";
   const btnId12 = "#Projects2";
   const btnId13 = "#Projects3";
   const btnId14 = "#Projects4";
+
   return (
     <div>
       <div>
@@ -16,9 +22,26 @@ export function ProjectsView({ navigate }) {
             btnId12={btnId12}
             btnId13={btnId13}
             btnId14={btnId14}
+            projectsDisaplay={projectsDisplay}
+            setProjectsDisplay={setProjectsDisplay}
           />
         </section>
-        <section id="projects1" className="h-screen">
+        <section>
+          <ProjectData projectsDisplay={projectsDisplay} />
+        </section>
+
+        <section className="h-screen grid grid-rows-3">
+          <TalentComponent navigate={navigate} />
+          <div className="row-span-1 flex flex-col justify-between">
+            <FooterComponent />
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+/*        <section id="projects1" className="h-screen">
           <h4>Projects-branding</h4>
           <h2> Rebranding and Logo Redesign for Upstart Innovations</h2>
           <p>
@@ -119,14 +142,4 @@ export function ProjectsView({ navigate }) {
             </p>
             <p>Emily Davis, Executive Director of Community Connect</p>
           </div>
-        </section>
-        <section className="h-screen grid grid-rows-3">
-          <TalentComponent navigate={navigate} />
-          <div className="row-span-1 flex flex-col justify-between">
-            <FooterComponent />
-          </div>
-        </section>
-      </div>
-    </div>
-  );
-}
+        </section>*/

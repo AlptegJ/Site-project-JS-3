@@ -1,7 +1,14 @@
 import { HeaderComponent } from "./Header";
 import { SocMedComponent } from "./Socmed";
 
-export function ProjectsComponent({ btnId11, btnId12, btnId13, btnId14 }) {
+export function ProjectsComponent({
+  btnId11,
+  btnId12,
+  btnId13,
+  btnId14,
+  projectsDisplay,
+  setProjectsDisplay,
+}) {
   return (
     <div className="h-screen w-screen grid grid-rows-6 ">
       <div className="row-span-1">
@@ -20,9 +27,15 @@ export function ProjectsComponent({ btnId11, btnId12, btnId13, btnId14 }) {
               </p>
             </div>
             <div className="flex justify-center gap-3 mt-10">
-              <button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
-                <a href={btnId11}>Branding</a>
+              <button
+                className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200"
+                onClick={() => {
+                  console.log("Branding");
+                }}
+              >
+                Branding
               </button>
+
               <button className="text-lg tracking-wider px-3 bg-white font-extrabold rounded-full border-4 border-orange-300 text-orange-300 hover:text-white hover:bg-red-500">
                 <a href={btnId12}>Web</a>
               </button>
@@ -42,3 +55,7 @@ export function ProjectsComponent({ btnId11, btnId12, btnId13, btnId14 }) {
     </div>
   );
 }
+
+/*<button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
+<a href={btnId11}>Branding</a>
+</button>*/

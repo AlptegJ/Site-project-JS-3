@@ -15,6 +15,7 @@ import { useNavigate } from "react-router-dom";
 function App() {
   const [current, setCurrent] = useState("");
   const navigate = useNavigate();
+  const [projectsDisplay, setProjectsDisplay] = useState("all");
 
   return (
     <>
@@ -45,7 +46,13 @@ function App() {
           <Route path="/about" element={<AboutView navigate={navigate} />} />
           <Route
             path="/projects"
-            element={<ProjectsView navigate={navigate} />}
+            element={
+              <ProjectsView
+                navigate={navigate}
+                projectsDisplay={projectsDisplay}
+                setProjectsDisplay={setProjectsDisplay}
+              />
+            }
           />
         </Routes>
       </div>
