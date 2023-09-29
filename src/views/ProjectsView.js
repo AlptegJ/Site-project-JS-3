@@ -2,32 +2,19 @@ import { FooterComponent } from "../components/Footer";
 import { ProjectsComponent } from "../components/Projects";
 import { TalentComponent } from "../components/Talent";
 import { ProjectData } from "../constants/ProjectsData";
+import React from "react";
+import { atom, useRecoilState } from "recoil";
+import { ProjState } from "../states/ProjState";
 
-export function ProjectsView({
-  navigate,
-  projectsDisplay,
-  setProjectsDisplay,
-}) {
-  const btnId11 = "#Projects1";
-  const btnId12 = "#Projects2";
-  const btnId13 = "#Projects3";
-  const btnId14 = "#Projects4";
-
+export function ProjectsView({ navigate }) {
   return (
     <div>
       <div>
         <section className="h-screen">
-          <ProjectsComponent
-            btnId11={btnId11}
-            btnId12={btnId12}
-            btnId13={btnId13}
-            btnId14={btnId14}
-            projectsDisaplay={projectsDisplay}
-            setProjectsDisplay={setProjectsDisplay}
-          />
+          <ProjectsComponent />
         </section>
         <section>
-          <ProjectData projectsDisplay={projectsDisplay} />
+          <ProjectData />
         </section>
 
         <section className="h-screen grid grid-rows-3">

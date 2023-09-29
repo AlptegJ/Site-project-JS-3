@@ -11,11 +11,11 @@ import { StrategyView } from "./views/StrategyView";
 import { JoinUsView } from "./views/JoinUsView";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
 function App() {
   const [current, setCurrent] = useState("");
   const navigate = useNavigate();
-  const [projectsDisplay, setProjectsDisplay] = useState("all");
 
   return (
     <>
@@ -46,13 +46,7 @@ function App() {
           <Route path="/about" element={<AboutView navigate={navigate} />} />
           <Route
             path="/projects"
-            element={
-              <ProjectsView
-                navigate={navigate}
-                projectsDisplay={projectsDisplay}
-                setProjectsDisplay={setProjectsDisplay}
-              />
-            }
+            element={<ProjectsView navigate={navigate} />}
           />
         </Routes>
       </div>

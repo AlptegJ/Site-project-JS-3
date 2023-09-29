@@ -1,4 +1,8 @@
-export function ProjectData({ projectsDisplay }) {
+import { ProjState } from "../states/ProjState";
+import { useRecoilState } from "recoil";
+
+export function ProjectData({}) {
+  const [projectsDisplay, setProjectsDisplay] = useRecoilState(ProjState);
   const projectsData = [
     {
       category: "branding",
@@ -32,8 +36,8 @@ export function ProjectData({ projectsDisplay }) {
     },
   ];
 
-  if (projectsDisplay === "all") {
-    console.log("all");
+  if (projectsDisplay === "branding") {
+    const filtered = [];
     return (
       <>
         {projectsData.map((project) => (
@@ -45,13 +49,23 @@ export function ProjectData({ projectsDisplay }) {
         ))}
       </>
     );
-  } else if (projectsDisplay === "branding") {
-    console.log("branding");
   } else if (projectsDisplay === "web") {
-    console.log("web");
+    return <div>web</div>;
   } else if (projectsDisplay === "strategy") {
-    console.log("strategy");
+    return <div>strategy</div>;
   } else if (projectsDisplay === "testemonials") {
-    console.log("testemonials");
+    return <div>Testemonials</div>;
+  } else {
+    return (
+      <>
+        {projectsData.map((project) => (
+          <section key={project.title}>
+            <h4>{project.category}</h4>
+            <h2>{project.title}</h2>
+            <p>{project.text}</p>
+          </section>
+        ))}
+      </>
+    );
   }
 }
