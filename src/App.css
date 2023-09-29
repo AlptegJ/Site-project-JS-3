@@ -1,3 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
+.talent-img {
+  object-fit: cover;
+}

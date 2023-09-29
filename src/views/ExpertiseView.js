@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { FooterComponent } from "../components/Footer";
-import { OtherAreasComponent } from "../components/OtherAreas";
 import { ExpertiseComponent } from "../components/Expertise";
+import { TalentComponent } from "../components/Talent";
 
-export function ExpertiseView() {
+export function ExpertiseView({ navigate }) {
   return (
     <div>
       <div>
@@ -19,13 +18,8 @@ export function ExpertiseView() {
         <section id="expertise3" className="h-screen">
           Expertise
         </section>
-        <section className="h-screen grid grid-rows-2">
-          <div className="row-span-1">
-            join us
-            <button>
-              <Link to="/join-us">Job</Link>
-            </button>
-          </div>
+        <section className="h-screen grid grid-rows-3">
+          <TalentComponent navigate={navigate} />
           <div className="row-span-1 flex flex-col justify-between">
             <FooterComponent />
           </div>

@@ -10,27 +10,47 @@ import { AboutView } from "./views/AboutView";
 import { StrategyView } from "./views/StrategyView";
 import { JoinUsView } from "./views/JoinUsView";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [current, setCurrent] = useState("");
+  const navigate = useNavigate();
   return (
     <>
       <div className="app">
         <Routes>
-          <Route path="/" element={<HeroView />} />
+          <Route path="/" element={<HeroView navigate={navigate} />} />
           <Route
             path="/branding"
-            element={<BrandingView current={current} setCurrent={setCurrent} />}
+            element={
+              <BrandingView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
           <Route
             path="/web"
-            element={<WebView current={current} setCurrent={setCurrent} />}
+            element={
+              <WebView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
           <Route
             path="/strategy"
-            element={<StrategyView current={current} setCurrent={setCurrent} />}
+            element={
+              <StrategyView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
-          <Route path="/join-us" element={<JoinUsView />} />
+          <Route path="/join-us" element={<JoinUsView navigate={navigate} />} />
           <Route path="/contact" element={<ContactView />} />
           <Route path="/expertise" element={<ExpertiseView />} />
           <Route path="/about" element={<AboutView />} />

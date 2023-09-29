@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { FooterComponent } from "../components/Footer";
-import { OtherAreasComponent } from "../components/OtherAreas";
 import { ProjectsComponent } from "../components/Projects";
+import { TalentComponent } from "../components/Talent";
 
-export function ProjectsView() {
+export function ProjectsView({ navigate }) {
   const btnId11 = "#Projects1";
   const btnId12 = "#Projects2";
   const btnId13 = "#Projects3";
@@ -121,13 +120,8 @@ export function ProjectsView() {
             <p>Emily Davis, Executive Director of Community Connect</p>
           </div>
         </section>
-        <section className="h-screen grid grid-rows-2">
-          <div className="row-span-1">
-            join us
-            <button>
-              <Link to="/join-us">Job</Link>
-            </button>
-          </div>
+        <section className="h-screen grid grid-rows-3">
+          <TalentComponent navigate={navigate} />
           <div className="row-span-1 flex flex-col justify-between">
             <FooterComponent />
           </div>

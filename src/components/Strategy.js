@@ -23,16 +23,16 @@ export function StrategyComponent({ btnId7, btnId8, btnId9, btnId10 }) {
             </div>
             <div className="flex justify-center gap-3 mt-10">
               <button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
-                <a href={btnId7}>Advertising</a>
+                <a href={btnId7}>Digital Marketing</a>
               </button>
               <button className="text-lg tracking-wider px-3 bg-white font-extrabold rounded-full border-4 border-orange-300 text-orange-300 hover:text-white hover:bg-red-500">
-                <a href={btnId8}>SEO</a>
+                <a href={btnId8}>Market Research</a>
               </button>
               <button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
-                <a href={btnId9}>Content</a>
+                <a href={btnId9}>Planning and Execution</a>
               </button>
               <button className="text-lg tracking-wider px-3 bg-white font-extrabold rounded-full border-4 border-orange-300 text-orange-300 hover:text-white hover:bg-red-500">
-                <a href={btnId10}>Social Media</a>
+                <a href={btnId10}>USP</a>
               </button>
             </div>
           </div>

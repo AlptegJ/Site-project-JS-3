@@ -1,8 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
-
-export function OtherAreasComponent({ current, setCurrent }) {
-  const navigate = useNavigate();
-
+export function OtherAreasComponent({ current, navigate }) {
   if (current === "branding") {
     return (
       <div className="h-screen w-screen grid grid-rows-6 ">

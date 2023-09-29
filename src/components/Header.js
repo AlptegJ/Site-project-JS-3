@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../logo-tw.png";
+import logo from "../assets/logo-tw.png";
 
 export function HeaderComponent() {
   return (

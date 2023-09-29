@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import { AboutComponent } from "../components/About";
-import { ProjectsComponent } from "../components/Projects";
 import { FooterComponent } from "../components/Footer";
 import { HeroComponent } from "../components/Hero";
+import { TalentComponent } from "../components/Talent";
 
-export function HeroView() {
+export function HeroView({ navigate }) {
   return (
     <div>
       <div>
@@ -32,13 +31,8 @@ export function HeroView() {
             <Link to="/projects">read more</Link>
           </button>
         </section>
-        <section className="h-screen grid grid-rows-2">
-          <div className="row-span-1">
-            come join us
-            <button>
-              <Link to="/join-us">Job</Link>
-            </button>
-          </div>
+        <section className="h-screen grid grid-rows-3">
+          <TalentComponent navigate={navigate} />
           <div className="row-span-1 flex flex-col justify-between">
             <FooterComponent />
           </div>
