@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil";
 
 export function ProjectData({}) {
   const [projectsDisplay, setProjectsDisplay] = useRecoilState(ProjState);
+
   const projectsData = [
     {
       category: "branding",
@@ -34,27 +35,77 @@ export function ProjectData({}) {
       title: "Educational Platform for EdTech Innovators",
       text: "TechWeavers collaborated with an EdTech startup to create an interactive educational platform. The project included developing a robust learning management system, designing engaging course materials, and implementing gamification elements. The platform's success was evident through a 25% increase in user engagement and improved student performance",
     },
+    {
+      category: "testemonial",
+      title: "yoyoyoy ",
+      text: "mad cool stuff",
+    },
   ];
 
   if (projectsDisplay === "branding") {
-    const filtered = [];
     return (
       <>
-        {projectsData.map((project) => (
-          <section key={project.title}>
-            <h4>{project.category}</h4>
-            <h2>{project.title}</h2>
-            <p>{project.text}</p>
-          </section>
-        ))}
+        {projectsData.map((project) =>
+          project.category === "branding" ? (
+            <section key={project.title}>
+              <h4>{project.category}</h4>
+              <h2>{project.title}</h2>
+              <p>{project.text}</p>
+            </section>
+          ) : (
+            <></>
+          )
+        )}
       </>
     );
   } else if (projectsDisplay === "web") {
-    return <div>web</div>;
+    return (
+      <>
+        {projectsData.map((project) =>
+          project.category === "web" ? (
+            <section key={project.title}>
+              <h4>{project.category}</h4>
+              <h2>{project.title}</h2>
+              <p>{project.text}</p>
+            </section>
+          ) : (
+            <></>
+          )
+        )}
+      </>
+    );
   } else if (projectsDisplay === "strategy") {
-    return <div>strategy</div>;
+    return (
+      <>
+        {projectsData.map((project) =>
+          project.category === "strategy" ? (
+            <section key={project.title}>
+              <h4>{project.category}</h4>
+              <h2>{project.title}</h2>
+              <p>{project.text}</p>
+            </section>
+          ) : (
+            <></>
+          )
+        )}
+      </>
+    );
   } else if (projectsDisplay === "testemonials") {
-    return <div>Testemonials</div>;
+    return (
+      <>
+        {projectsData.map((project) =>
+          project.category === "testemonial" ? (
+            <section key={project.title}>
+              <h4>{project.category}</h4>
+              <h2>{project.title}</h2>
+              <p>{project.text}</p>
+            </section>
+          ) : (
+            <></>
+          )
+        )}
+      </>
+    );
   } else {
     return (
       <>
