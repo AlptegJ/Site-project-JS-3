@@ -38,7 +38,9 @@ export function TalentComponent({ navigate }) {
         <h1
           className="talent-text text-8xl z-20 -translate-y-5 text-white cursor-pointer hover:text-red-500 "
           onClick={() => {
-            navigate("/join-us");
+            {
+              navigate("/join-us");
+            }
             window.scrollTo(0, 0);
           }}
         >
