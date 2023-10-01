@@ -23,13 +23,13 @@ export function BrandingComponent({ btnId1, btnId2, btnId3 }) {
               </p>
             </div>
             <div className="flex justify-center gap-3 mt-10">
-              <button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
+              <button className="text-lg tracking-wider px-3 bg-red-950 font-extrabold rounded-full text-white hover:bg-sky-400">
                 <a href={btnId1}>Identity</a>
               </button>
-              <button className="text-lg tracking-wider px-3 bg-white font-extrabold rounded-full border-4 border-orange-300 text-orange-300 hover:text-white hover:bg-red-500">
+              <button className="text-lg tracking-wider px-3 bg-sky-400 font-extrabold rounded-full   text-white hover:bg-red-950">
                 <a href={btnId2}>Storytelling</a>
               </button>
-              <button className="text-lg tracking-wider px-3 bg-red-500 font-extrabold rounded-full text-white hover:bg-orange-200">
+              <button className="text-lg tracking-wider px-3 bg-red-950 font-extrabold rounded-full text-white hover:bg-sky-400">
                 <a href={btnId3}>Guidelines</a>
               </button>
             </div>

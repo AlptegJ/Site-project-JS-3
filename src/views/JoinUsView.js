@@ -14,9 +14,9 @@ export function JoinUsView({ navigate }) {
 
         <section id="joinUs1" className="h-screen">
           <div className="grid grid-cols-3 grid-rows-3 gap-2">
-            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-amber-50">
-                <h4 className="text-3xl">Casual Dress Code:</h4>
+            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 shadow-xl">
+                <h4 className="text-5xl">Casual Dress Code:</h4>
                 <p className="px-10">
                   TechWeavers promotes a relaxed atmosphere by encouraging
                   employees to dress casually. This allows team members to feel
@@ -27,9 +27,9 @@ export function JoinUsView({ navigate }) {
 
             <div className="col-span-1 row-span-1">Something</div>
 
-            <div className="card col-span-2 row-span-1  bg-amber-50 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black rounded-3xl">
-                <h4 className="text-3xl"> Flexible Work Hours: </h4>
+            <div className="card col-span-2 row-span-1  bg-sky-400 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+                <h4 className="text-5xl"> Flexible Work Hours: </h4>
                 <p className="px-10">
                   TechWeavers values work-life balance and offers flexible work
                   hours. Team members can adjust their schedules to accommodate
@@ -43,9 +43,9 @@ export function JoinUsView({ navigate }) {
 
         <section id="joinUs2" className="h-screen">
           <div className="grid grid-cols-2 grid-rows-2 gap-2">
-            <div className="card col-span-1 row-span-2  bg-stone-800 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-amber-50">
-                <h4 className="text-3xl">Regular Team Building Events: </h4>
+            <div className="card col-span-1 row-span-2  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 shadow-xl">
+                <h4 className="text-5xl">Regular Team Building Events: </h4>
                 <p className="px-10">
                   TechWeavers organizes frequent team building activities and
                   events, such as team lunches, game nights, and outdoor
@@ -58,9 +58,9 @@ export function JoinUsView({ navigate }) {
             <div className="col-span-1 row-span-2">Something</div>
             <div className="col-span-1 row-span-2">Something</div>
 
-            <div className="card col-span-1 row-span-2  bg-amber-50 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black rounded-3xl">
-                <h4 className="text-3xl">Creative Workspace:</h4>
+            <div className="card col-span-1 row-span-2  bg-sky-400 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+                <h4 className="text-5xl">Creative Workspace:</h4>
                 <p className="px-10">
                   The office environment at TechWeavers is designed to spark
                   creativity and innovation. Employees have access to
@@ -76,9 +76,9 @@ export function JoinUsView({ navigate }) {
           <div className="grid grid-cols-3 grid-rows-3 gap-2">
             <div className="col-span-1 row-span-2">Something</div>
 
-            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-amber-50">
-                <h4 className="text-3xl">Tech Gadgets and Toys:</h4>
+            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 shadow-xl">
+                <h4 className="text-5xl">Tech Gadgets and Toys:</h4>
                 <p className="px-10">
                   To keep things fun and engaging, TechWeavers provides access
                   to the latest tech gadgets and toys in the office. This
@@ -88,9 +88,9 @@ export function JoinUsView({ navigate }) {
               </div>
             </div>
 
-            <div className="card col-span-2 row-span-1  bg-amber-50 m-5 rounded-3xl ">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black rounded-3xl ">
-                <h4 className="text-3xl">Learning and Growth Opportunities:</h4>
+            <div className="card col-span-2 row-span-1  bg-sky-400 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+                <h4 className="text-5xl">Learning and Growth Opportunities:</h4>
                 <p className="px-10">
                   TechWeavers invests in employee development by offering
                   regular workshops, training sessions, and opportunities for

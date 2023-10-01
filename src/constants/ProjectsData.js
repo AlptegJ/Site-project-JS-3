@@ -1,7 +1,7 @@
 import { ProjState } from "../states/ProjState";
 import { useRecoilState } from "recoil";
 
-export function ProjectData({}) {
+export function ProjectData() {
   const [projectsDisplay, setProjectsDisplay] = useRecoilState(ProjState);
 
   const projectsData = [
@@ -37,8 +37,21 @@ export function ProjectData({}) {
     },
     {
       category: "testemonial",
-      title: "yoyoyoy ",
-      text: "mad cool stuff",
+      title: "LuxeGoods Co.",
+      text: "TechWeavers transformed our online business. Their expertise in web development and design helped us create a stunning e-commerce platform. Our online sales increased significantly, and our customers love the user-friendly experience. TechWeavers is a true partner in our success.",
+      person: "John Smith, CEO of LuxeGoods Co.",
+    },
+    {
+      category: "testemonial",
+      title: "Upstart Innovations",
+      text: "TechWeavers took our startup's rebranding to a whole new level. Their creative team completely revamped our brand identity and logo, giving us a fresh and modern look. The positive response from our customers and investors has been overwhelming. TechWeavers is the go-to agency for brand transformation.",
+      person: "Sarah Johnson, Founder of Upstart Innovations",
+    },
+    {
+      category: "testemonial",
+      title: "Community Connect",
+      text: "Our non-profit organization needed a modern website to connect with our community better, and TechWeavers delivered beyond our expectations. They not only redesigned our website but also improved its functionality. The increase in online donations and volunteer sign-ups speaks volumes about their expertise.",
+      person: "Emily Davis, Executive Director of Community Connect",
     },
   ];
 
@@ -99,6 +112,7 @@ export function ProjectData({}) {
               <h4>{project.category}</h4>
               <h2>{project.title}</h2>
               <p>{project.text}</p>
+              <h2>{project.person}</h2>
             </section>
           ) : (
             <></>
@@ -107,16 +121,6 @@ export function ProjectData({}) {
       </>
     );
   } else {
-    return (
-      <>
-        {projectsData.map((project) => (
-          <section key={project.title}>
-            <h4>{project.category}</h4>
-            <h2>{project.title}</h2>
-            <p>{project.text}</p>
-          </section>
-        ))}
-      </>
-    );
+    return <h2>Pick a category!</h2>;
   }
 }

@@ -14,7 +14,7 @@ export function HeroComponent() {
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
               <h2 className="opacity-25">Branding</h2>
-              <h2 className="hover:text-red-500">
+              <h2 className="hover:text-red-950">
                 <Link to="/branding">Branding</Link>
               </h2>
               <h2 className="opacity-25">Branding</h2>
@@ -23,7 +23,7 @@ export function HeroComponent() {
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
               <h2 className="opacity-25  ">webwebweb</h2>
-              <h2 className="opacity-100 hover:text-red-500">
+              <h2 className="opacity-100 hover:text-red-950">
                 <Link to="/web">Web</Link>
               </h2>
               <h2 className="opacity-25 ">webwebweb</h2>
@@ -32,15 +32,16 @@ export function HeroComponent() {
           <div className=" text-8xl ">
             <span className="flex overflow-hidden flex-no-wrap flex-row gap-2">
               <h2 className="opacity-25">strategy</h2>
-              <h2 className="opacity-100 hover:text-red-500">
+              <h2 className="opacity-100 hover:text-red-950">
                 <Link to="/strategy">Strategy</Link>
               </h2>
               <h2 className="opacity-25">strategy</h2>
             </span>
           </div>
           <p className="text-m mt-5">
-            Want to stad out from the crowd? <br />
-            Let us bring your project to the next lvl!
+            Want to stad out from the crowd? Let
+            <h2 className="text-4xl hover:text-sky-400">TECHWEAVERS</h2>
+            bring your project to the next lvl!
           </p>
         </div>
       </div>

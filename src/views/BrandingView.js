@@ -28,23 +28,34 @@ export function BrandingView({ current, setCurrent, navigate }) {
             </p>
           </div>
         </section>
-        <section id="branding2" className="h-screen">
-          <h2>Brand Messaging and Storytelling</h2>
-          <p>
-            Crafting compelling brand stories and messages is crucial for
-            connecting with the target audience. This subject focuses on
-            developing a brand's narrative, defining its voice, and
-            communicating its mission effectively through various channels.
-          </p>
+        <section
+          id="branding2"
+          className="h-screen flex flex-col justify-center"
+        >
+          <div className="flex flex-col justify-center items-center gap-10">
+            <h2 className="text-5xl">Brand Messaging and Storytelling</h2>
+            <p className="w-1/2 ml-5">
+              Crafting compelling brand stories and messages is crucial for
+              connecting with the target audience. This subject focuses on
+              developing a brand's narrative, defining its voice, and
+              communicating its mission effectively through various channels.
+            </p>
+          </div>
         </section>
-        <section id="branding3" className="h-screen">
-          <h2>Brand Guidelines and Standards</h2>
-          <p>
-            Establishing brand guidelines ensures that all branding elements are
-            used consistently across different platforms and materials. This
-            subject involves creating comprehensive brand manuals that provide
-            guidelines for logo usage, typography, color palettes, and more.
-          </p>
+        <section
+          id="branding3"
+          className="h-screen flex flex-col justify-center"
+        >
+          <div className="flex flex-col justify-center items-center gap-10">
+            <h2 className="text-5xl">Brand Guidelines and Standards</h2>
+            <p className="w-1/2 ml-5">
+              Establishing brand guidelines ensures that all branding elements
+              are used consistently across different platforms and materials.
+              This subject involves creating comprehensive brand manuals that
+              provide guidelines for logo usage, typography, color palettes, and
+              more.
+            </p>
+          </div>
         </section>
         <section className="h-screen">
           <OtherAreasComponent

@@ -11,7 +11,6 @@ import { StrategyView } from "./views/StrategyView";
 import { JoinUsView } from "./views/JoinUsView";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RecoilRoot } from "recoil";
 
 function App() {
   const [current, setCurrent] = useState("");
@@ -24,15 +23,33 @@ function App() {
           <Route path="/" element={<HeroView navigate={navigate} />} />
           <Route
             path="/branding"
-            element={<BrandingView current={current} setCurrent={setCurrent} />}
+            element={
+              <BrandingView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
           <Route
             path="/web"
-            element={<WebView current={current} setCurrent={setCurrent} />}
+            element={
+              <WebView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
           <Route
             path="/strategy"
-            element={<StrategyView current={current} setCurrent={setCurrent} />}
+            element={
+              <StrategyView
+                current={current}
+                setCurrent={setCurrent}
+                navigate={navigate}
+              />
+            }
           />
           <Route path="/join-us" element={<JoinUsView navigate={navigate} />} />
           <Route

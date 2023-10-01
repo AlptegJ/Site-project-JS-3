@@ -1,25 +1,26 @@
 import { Link } from "react-router-dom";
 import { SocMedComponent } from "./Socmed";
+import logo from "../assets/logo-tw.png";
 
 export function ContactComponent() {
   return (
-    <div className="w-screen h-screen flex flex-col justify-between bg-red-500 ">
-      <header className="bg-red-500 flex justify-between">
+    <div className="w-screen h-screen flex flex-col justify-between bg-sky-400 ">
+      <header className="bg-sky-400 flex justify-between">
         <Link
           to="/"
           className="my-4 mx-5 px-3 py-1 text-xs text-white font-extrabold"
         >
-          LOGO
+          <img src={logo} alt="logo" className="w-12"></img>
         </Link>
         <Link to="/">
-          <button className="my-4 mx-5 px-3 py-1 text-xs text-red-500 font-extrabold rounded-full bg-white  ">
+          <button className="my-4 mx-5 px-3 py-1 text-xs text-red-950 font-extrabold rounded-full bg-white  ">
             BACK TO WEBSITE
           </button>
         </Link>
       </header>
-      <div className="bg-red-500 flex justify-center">
+      <div className="bg-sky-400 flex justify-center">
         <div className="flex justify-between mx-5 w-2/3 ">
-          <section className="">
+          <section className="text-3xl">
             <h1 className="text-white text-6xl fornt-extrabold">
               Wanna chat over Brunch?
             </h1>
@@ -32,7 +33,7 @@ export function ContactComponent() {
                 <input
                   name="name-input"
                   id="name-input"
-                  className="bg-red-500 mx-2 outline-none underline underline-offset-4"
+                  className="bg-sky-400 mx-2 outline-none underline underline-offset-4"
                 ></input>
               </label>
               <label
@@ -44,7 +45,7 @@ export function ContactComponent() {
               <input
                 name="errand-input"
                 id="errand-input"
-                className="bg-red-500 mr-10 outline-none underline underline-offset-4"
+                className="bg-sky-400 mr-10 outline-none underline underline-offset-4"
               ></input>
               <label
                 htmlFor="phone-input"
@@ -54,7 +55,7 @@ export function ContactComponent() {
                 <input
                   name="phone-input"
                   id="phone-input"
-                  className="bg-red-500 mx-2 outline-none underline underline-offset-4"
+                  className="bg-sky-400 mx-2 outline-none underline underline-offset-4"
                 ></input>
               </label>
               <label
@@ -65,7 +66,7 @@ export function ContactComponent() {
                 <input
                   name="email-input"
                   id="email-input"
-                  className="bg-red-500 mx-2 outline-none underline underline-offset-4"
+                  className="bg-sky-400 mx-2 outline-none underline underline-offset-4"
                 ></input>
               </label>
               <button type="submit"></button>

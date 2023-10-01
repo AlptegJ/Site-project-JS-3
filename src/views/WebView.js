@@ -57,7 +57,7 @@ export function WebView({ current, setCurrent, navigate }) {
           />
         </section>
         <section className="h-screen grid grid-rows-3">
-          <TalentComponent />
+          <TalentComponent navigate={navigate} />
           <div className="row-span-1 flex flex-col justify-between">
             <FooterComponent />
           </div>
