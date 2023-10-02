@@ -18,7 +18,7 @@ export function ProjectsView({ navigate }) {
           <ProjectsComponent />
         </section>
         <section className=" h-screen w-screen flex flex-col justify-center items-center">
-          <div className="flex gap-3 mt-10">
+          <div className="flex gap-3 my-10">
             <button
               id="branding"
               className="text-lg tracking-wider px-3 bg-red-950 font-extrabold rounded-full text-white hover:bg-sky-400"

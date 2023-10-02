@@ -38,11 +38,11 @@ export function HeroComponent() {
               <h2 className="opacity-25">strategy</h2>
             </span>
           </div>
-          <p className="text-m mt-5">
+          <span className="text-m mt-5">
             Want to stad out from the crowd? Let
-            <h2 className="text-4xl hover:text-sky-400">TECHWEAVERS</h2>
+            <p className="text-4xl hover:text-sky-400">TECHWEAVERS</p>
             bring your project to the next lvl!
-          </p>
+          </span>
         </div>
       </div>
       <div className="row-span-1">

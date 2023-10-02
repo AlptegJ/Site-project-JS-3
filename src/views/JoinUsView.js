@@ -27,8 +27,8 @@ export function JoinUsView({ navigate }) {
 
             <div className="col-span-1 row-span-1">Something</div>
 
-            <div className="card col-span-2 row-span-1  bg-sky-400 m-5 shadow-xl">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 border-2 border-black shadow-xl">
                 <h4 className="text-5xl"> Flexible Work Hours: </h4>
                 <p className="px-10">
                   TechWeavers values work-life balance and offers flexible work
@@ -58,8 +58,8 @@ export function JoinUsView({ navigate }) {
             <div className="col-span-1 row-span-2">Something</div>
             <div className="col-span-1 row-span-2">Something</div>
 
-            <div className="card col-span-1 row-span-2  bg-sky-400 m-5 shadow-xl">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+            <div className="card col-span-1 row-span-2  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 border-2 border-black shadow-xl">
                 <h4 className="text-5xl">Creative Workspace:</h4>
                 <p className="px-10">
                   The office environment at TechWeavers is designed to spark
@@ -88,8 +88,8 @@ export function JoinUsView({ navigate }) {
               </div>
             </div>
 
-            <div className="card col-span-2 row-span-1  bg-sky-400 m-5 shadow-xl">
-              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-black border-2 border-black shadow-xl">
+            <div className="card col-span-2 row-span-1  bg-stone-800 m-5 shadow-xl">
+              <div className="flex flex-col gap-5 justify-center items-center h-96 px-10 text-pink-50 border-2 border-black shadow-xl">
                 <h4 className="text-5xl">Learning and Growth Opportunities:</h4>
                 <p className="px-10">
                   TechWeavers invests in employee development by offering

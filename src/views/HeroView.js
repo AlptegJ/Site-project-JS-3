@@ -94,7 +94,7 @@ export function HeroView({ navigate }) {
             <h4
               className="text-2xl hover:text-red-950 cursor-pointer"
               onClick={() => {
-                navigate("/experise");
+                navigate("/expertise");
                 window.scrollTo(0, 0);
               }}
             >
