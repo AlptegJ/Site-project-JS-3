@@ -15,7 +15,7 @@ export function AboutComponent() {
               <h4 className="text-5xl">Music Food and Beer </h4>
             </div>
             <div className="flex justify-end mr-10 ">
-              <p className="max-w-xl text-xl ">and also WEB</p>
+              <p className="text-xl ">and also WEB</p>
             </div>
           </div>
         </div>

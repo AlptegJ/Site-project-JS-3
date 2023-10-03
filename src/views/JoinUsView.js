@@ -1,5 +1,6 @@
 import { FooterComponent } from "../components/Footer";
 import { JoinUsComponent } from "../components/JoinUs";
+import banner3 from "../assets/banner3.png";
 
 export function JoinUsView({ navigate }) {
   return (
@@ -8,9 +9,16 @@ export function JoinUsView({ navigate }) {
         <section className="h-screen">
           <JoinUsComponent />
         </section>
-        <div className="flex justify-center mb-4">
-          <h1 className="text-6xl ">Perks of working with us!</h1>
-        </div>
+        <section
+          className="h-screen bg-fixed flex flex-col justify-center items-center "
+          style={{ backgroundImage: `url(${banner3})` }}
+        >
+          <div className="flex flex-col justify-center items-center  mb-4 ">
+            <h1 className=" items-center text-8xl text-white drop-shadow-[2px_2px_rgba(0,0,0,0.8)]">
+              Perks of working with us!
+            </h1>
+          </div>
+        </section>
 
         <section id="joinUs1" className="h-screen">
           <div className="grid grid-cols-3 grid-rows-3 gap-2">
